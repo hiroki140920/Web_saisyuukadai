@@ -1,0 +1,237 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Shippori Mincho", serif;
+    font-size: 16px;
+    line-height: 1.5;
+   }
+  * {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  a {
+    transition: 0.3s;
+    color: black;
+  }
+  a:hover {
+    opacity: 0.2;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .page-header,
+  .page-hero,
+  .page-content,
+  .page-footer {
+    width: 100%;
+  }
+  
+  .page-header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 16px 0 24px;
+    background-color: #687099;
+  }
+  .page-header__inner,
+  .page-content__inner {
+    box-sizing: content-box;
+  }
+
+  .page-header__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .page-header .logo,
+  .page-footer .logo {
+    width: 256px;
+  }
+  .sns-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .sns-list__item {
+    width: 24px;
+  }
+  .sns-list__item:not(:first-child) {
+    margin-left: 16px;
+  }
+  .page-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .global-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .global-nav > .sns-list {
+    margin-left: 64px;
+  }
+  .global-nav > .link-button {
+    margin-left: 64px;
+  }
+  .link-button {
+    display: table;
+    width: 140px;
+  }
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .menu-list__item{
+      flex-wrap: wrap;
+      margin-left: 24px;
+  }
+
+  .menu-list__item a{
+    color: #ffffff;
+  }
+
+  .col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1080px;
+    margin: 24px auto 0 auto;
+    padding: 24px 24px 8px 24px;
+}
+
+  .col-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1080px;
+    margin: 24px auto 0 auto;
+    padding: 24px 24px 8px 24px;
+}
+
+.col-5 iframe {
+  width: 100%;
+  height: 576px;
+}
+
+.col-list2 {
+    max-width: 48%;
+    margin-bottom: 16px;
+    width: 48%;
+    margin-top: 50px;
+}
+
+.col-list2 iframe {
+  width: 100%;
+  height: 286px;
+}
+
+.col-list3 {
+    max-width: 100%;
+
+}
+
+.col-list4{
+    margin: 24px auto 0 auto;
+    padding: 24px 24px 8px 24px;
+    background-color: #687099;
+  }
+  
+  .col-list5{
+    margin-right: 0;
+    margin-left: auto;
+    width: 30%;
+  }
+  .col-list6{
+    width: 1040px;
+    margin: 0 auto 0 auto;
+    color: #ffffff;
+  }
+
+h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+    border-bottom: 2px solid #687099;
+    padding-bottom: 4px;
+    max-width: 400px;
+}
+h3 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+}
+
+ p {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+    max-width: 55%;
+} 
+
+.col-list6 p{
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  max-width: 100%;
+}
+
+.col-list2 a, .col-list3 a{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 24px auto;
+  max-width: 55%;
+  z-index: 5;
+}
+
+  #iro, #meisi, #moji, #web, #saito {
+  margin-top: -100px;
+  padding-top: 100px;
+}  
+
+.animated:hover{
+  animation: headShake 1s;
+} 
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .page-heading { color: #991616;}
+}
+
+@media all and (max-width: 480px) {
+  .page-header { width: 100%; max-width: 480px;}
+  .page-heading { color: #7F9916; }
+  .page-content { width: 92%;}
+
+  .feature-list, .cost-list {  
+    flex-direction: column;
+    height: 100%; }
+
+  .feature-list__item { margin: 0 auto 48px; }
+  .feature-list__item h3 { margin-top: 16px; }
+
+  .cost-list__item { max-width: 100%;}
+
+  .company-column {  
+    flex-direction: column-reverse;
+    height: 100%; }
+
+  .company-map iframe { width: 100%;}
+  .global-nav { display: none; }
+
+}
